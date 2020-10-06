@@ -22,7 +22,10 @@ Para que possamos executar o programa deveremos utilizar os seguintes comandos a
 
 Mas, nesta fase de execução eu testei em dois computadores que possuo, para o computador 1, obtive o primeiro resultado:
 
-Para o computador dois, eu obtive este segundo resultado.
+![Screenshot](PrimeiraImagem-Dell.jpeg)
+
+Para o computador dois, eu obtive este segundo resultado:
+
 
 
 ## Dificuldades
