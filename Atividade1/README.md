@@ -24,7 +24,10 @@ Mas, nesta fase de execução eu testei em dois computadores que possuo, para o 
 
 ![Screenshot](PrimeiraImagem-Dell.jpeg)
 
-Para o computador dois, eu obtive este segundo resultado:
+Para o computador 2, eu obtive este segundo resultado:
+
+
+![Screenshot1](SegundaImagen-ACER.jpeg)
 
 
 
