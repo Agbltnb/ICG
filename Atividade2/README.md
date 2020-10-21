@@ -25,4 +25,7 @@ Para o desenvolvimento desta atividade alguns requisitos deverão ser atingidos,
 
 - Implementação da função DrawTriangle:  responsável em recebe como parâmetros três vértice e suas respectivas cores, para que desse irá chamar a função DrawLine e un triângulo possa ser plotado.
 
-##
+##PutPixel 
+
+Nesta função a lógica que foi utilizada para a implementação é baseada no cálculo do offset, onde a posição do pixel da tela, e atribuindo a cor desejada para a rasterização do ponto. O offset é cálculado por meio da expressão X4 + Y4*Altura, no qual o X e Y representam as coordenadas x e y do ponto a ser rasterizado, e a Altura está relacionada a dimenssão da tela.
+
