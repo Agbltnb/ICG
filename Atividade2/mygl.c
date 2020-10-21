@@ -30,16 +30,16 @@ void CloseMyGl(void) {
 }
 
 //
-// >>> Caro aluno: defina aqui as funções que você implementar <<<
+// >>> Caro aluno: defina aqui as funÃ§Ãµes que vocÃª implementar <<<
 //
 
-void PutPixel(struct Pontos p, struct Cor c)   //Função responsavee para colorir o pixel
+void PutPixel(struct Pontos p, struct Cor c)   //FunÃ§Ã£o responsavee para colorir o pixel
 {
 	//Efetua o calulo no offset do ponteira para a cor do buffer	
 	int end = p.x * 4 + p.y * 4 * IMAGE_WIDTH;
 
 
-	//Adiciona a informação de cor do pixel para cada banda, r,g,b,a
+	//Adiciona a informaÃ§Ã£o de cor do pixel para cada banda, r,g,b,a
 	fb_ptr[end] 	   = c.r;
 	fb_ptr[end + 1] = c.g;
 	fb_ptr[end + 2] = c.b;
@@ -48,7 +48,7 @@ void PutPixel(struct Pontos p, struct Cor c)   //Função responsavee para colorir
 
 
 
-void DrawLine(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB) // função responsavel no preenchimento da lista
+void DrawLine(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB) // funÃ§Ã£o responsavel no preenchimento da lista
 {
 	int x = pA.x;
 	int y = pA.y;
@@ -62,26 +62,26 @@ void DrawLine(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB) 
 	
 	int aux = 1;
 	int auy = 1;
-	//os valores a seguir serão calculados a partir do auxiliares
+	//os valores a seguir serÃ£o calculados a partir do auxiliares
 	int dx = xf - x;
 	
 	if (dx < 0) {
 	dx *= -1; 
-	aux = -1;} // se o delta x for negativo o aux tbm será
+	aux = -1;} // se o delta x for negativo o aux tbm serÃ¡
 	int dy = yf - y;
 	
-	if (dy < 0) { //se o delta y for negativo o aux tbm será
+	if (dy < 0) { //se o delta y for negativo o aux tbm serÃ¡
 	dy *= -1; 
 	auy = -1;}
 	
 	PutPixel(pA, cA);
-	//daqui para baixo é a simulação de um rebatimento de qualquer linha para o primeiro octante
+	//daqui para baixo Ã© a simulaÃ§Ã£o de um rebatimento de qualquer linha para o primeiro octante
 	if (dy <= dx){
 		int D = 2 * dy - dx;
 		int inc_E = 2 * dy;
 		int inc_NE = 2 * (dy - dx);
 		
-//Cálculo para cada banda utilizados a interpolação
+//CÃ¡lculo para cada banda utilizados a interpolaÃ§Ã£o
 		float dr = (cB.r - cA.r)/dx;
 		float dg = (cB.g - cA.g)/dx;
 		float db = (cB.b - cA.b)/dx;
@@ -135,7 +135,7 @@ void DrawLine(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB) 
 }
 
 
-//O triângulo é criado interligando de 3 linhas  utilizando a função DrawLine
+//O triÃ¢ngulo Ã© criado interligando de 3 linhas  utilizando a funÃ§Ã£o DrawLine
 void DrawTriangle(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB, struct Pontos pC, struct Cor cC) 
 {
 	DrawLine(pA, cA, pB, cB);
@@ -145,13 +145,13 @@ void DrawTriangle(struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor 
 	
 }
 
-// Definição da função que chamará as funções implementadas pelo aluno
+// DefiniÃ§Ã£o da funÃ§Ã£o que chamarÃ¡ as funÃ§Ãµes implementadas pelo aluno
 void MyGlDraw(void) {
     //
-    // >>> Caro aluno: chame aqui as funções que você implementou <<<
+    // >>> Caro aluno: chame aqui as funÃ§Ãµes que vocÃª implementou <<<
     //
     
-    //Inicialização das paletas de cores que 
+    //InicializaÃ§Ã£o das paletas de cores que 
     struct Cor amarelo = {255, 255, 0, 255};
     struct Cor azul = {0, 0, 255, 255};
     struct Cor branco = {255, 255, 255, 255};
@@ -168,17 +168,16 @@ void MyGlDraw(void) {
 	//}
 
 	
-	//Teste  Desenha uma linha branca do canto inferior esquerdo da tela ao canto superior direito da tela
+	// Desenha uma linha 
 	/*{
 		struct Pontos pA = {0, 0};
-		//struct Pontos pB = {IMAGE_WIDTH - 1, IMAGE_HEIGHT - 1};
 		struct Pontos pB = {200, 300};
 		DrawLine(pA, amarelo, pB, amarelo);
 	}*/
 	
 
 	
-	//Teste-> Desenhando um triângulo na tela
+	//Desenhando um triÃ¢ngulo na tela
 	/*{
 		struct Pontos pAA = {0, 0};
 		struct Pontos pBB = {200,300};
@@ -202,8 +201,9 @@ void MyGlDraw(void) {
 
 
 	}*/
+	//Desenha linhas 
 
-	{ int xC = IMAGE_WIDTH/2;
+	/*{ int xC = IMAGE_WIDTH/2;
 	int yC = IMAGE_HEIGHT/2;
 
 	int pAA = IMAGE_WIDTH -1;
@@ -224,7 +224,7 @@ void MyGlDraw(void) {
 		DrawLine(central,   branco, linha4, roxo);
 
 
-	}
+	}*/
 
 
 }
@@ -232,7 +232,7 @@ void MyGlDraw(void) {
 
 /*void DrawCircleArc(Point piu , float radius, Cor cA, float angle, float var_an){
 //struct Pontos pA, struct Cor cA, struct Pontos pB, struct Cor cB, struct Pontos pC, struct Cor cC
-//chama a função putpixel
+//chama a funÃ§Ã£o putpixel
 
 	PutPixel(piu, cA);
 	float aux_ang = 0.0f;
