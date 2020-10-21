@@ -29,3 +29,20 @@ Para o desenvolvimento desta atividade alguns requisitos deverão ser atingidos,
 
 Nesta função a lógica que foi utilizada para a implementação é baseada no cálculo do offset, onde a posição do pixel da tela, e atribuindo a cor desejada para a rasterização do ponto. O offset é cálculado por meio da expressão X4 + Y4*Altura, no qual o X e Y representam as coordenadas x e y do ponto a ser rasterizado, e a Altura está relacionada a dimenssão da tela.
 
+## DrawLine
+
+Para a implementação desta função foi algortimo do ponto médio que o docente solicitou e a partir das aulas dadas pelo menos podemos obter uma estratégia em como poderá ser chegar a uma determinada solução. 
+
+Para os calculos será utilizado variaveis auxiliares para obter o comportamento das taxas de variações.
+
+ - Variação do eixo X negativa, Dx<0 : a reta cresce para o lado negativo, sendo necessário a inversão dos pontos. Então o ponto de origem é modificado para destino e vice-versa.
+
+ - Variação do eixo Y negativa, Dy<0 : Quando a reta é crescente para o lado negativo do Y, calculamos o módulo do valor desta variação e dessa forma, assim o ΔY ficará  positivo. 
+
+
+## DrawTriangle
+Por fim, esta função é responsavel em fazer três chamadas da função DrawLine para que três retas possam ser rasterizadas e formem o desenho de um triângulo, com suas arestas possuindo cores interpoladas.
+
+### Resultados
+
+
