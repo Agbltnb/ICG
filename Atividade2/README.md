@@ -45,4 +45,5 @@ Por fim, esta função é responsavel em fazer três chamadas da função DrawLi
 
 ### Resultados
 
+![Screenshot](Screenshot from 2020-10-20 20-57-22.png)
 
