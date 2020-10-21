@@ -17,10 +17,10 @@ A estrutura da Framework disponibilizada é:
 
 Para o desenvolvimento desta atividade alguns requisitos deverão ser atingidos, são esses:
 
--Implementar a interpolaço de cores: a partir de dois pontos, a operação de interpolação deverá interpolar a cor da linha com base nas dimenses e cores pré-estabelicidas pelo discente.
+- Implementar a interpolaço de cores: a partir de dois pontos, a operação de interpolação deverá interpolar a cor da linha com base nas dimenses e cores pré-estabelicidas pelo discente.
 
--Implementação da função PutPixel : que deverá receber como entrada as coordenadas de um ponto e uma cor em RGBA, para que possamos fazer a rasterização de um determinado ponto na memória de vídeo. 
+- Implementação da função PutPixel : que deverá receber como entrada as coordenadas de um ponto e uma cor em RGBA, para que possamos fazer a rasterização de um determinado ponto na memória de vídeo. 
 
--Implementar a função DrawLine :  responsavel por rasterizar uma linha, com dois pontos sendo atribuidos como entrada para um respectivo vertice.  A reta resultante será dado a partir da interpolação e sua coloração se tornará um degradê.
+- Implementar a função DrawLine :  responsavel por rasterizar uma linha, com dois pontos sendo atribuidos como entrada para um respectivo vertice.  A reta resultante será dado a partir da interpolação e sua coloração se tornará um degradê.
 
 - Implementação da função DrawTriangle:  
