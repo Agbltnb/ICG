@@ -23,4 +23,6 @@ Para o desenvolvimento desta atividade alguns requisitos deverão ser atingidos,
 
 - Implementar a função DrawLine :  responsavel por rasterizar uma linha, com dois pontos sendo atribuidos como entrada para um respectivo vertice.  A reta resultante será dado a partir da interpolação e sua coloração se tornará um degradê.
 
-- Implementação da função DrawTriangle:  
+- Implementação da função DrawTriangle:  responsável em recebe como parâmetros três vértice e suas respectivas cores, para que desse irá chamar a função DrawLine e un triângulo possa ser plotado.
+
+##
